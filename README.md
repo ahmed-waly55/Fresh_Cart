@@ -190,3 +190,9 @@ Because authentication is a global application concern.
 
 - If login is a **mandatory entry point for the whole app** → put it in `core/`
 - If login is **optional or isolated as a normal feature** → put it in `feature/`
+
+## Enviroments
+
+```
+ng g enviroments
+```

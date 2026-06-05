@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from '../../../../environments/environment.development';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +16,7 @@ export class ProductsService {
 
 
   getAllProducts():Observable<any>{
-    return this._httpclient.get('https://ecommerce.routemisr.com/api/v1/products');
+    return this._httpclient.get(`${environment.baseURL}/api/v1/products`);
   }
 
 }
